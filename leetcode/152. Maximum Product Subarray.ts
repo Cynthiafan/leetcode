@@ -1,7 +1,7 @@
 /**
  * 🟡 152. Maximum Product Subarray
  * https://leetcode.com/problems/maximum-product-subarray/
- * Algorithm: 1-D Dynamic Programming
+ * 🎯 1-D Dynamic Programming
  */
 
 function maxProduct(nums: number[]): number {

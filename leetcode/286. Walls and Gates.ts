@@ -1,7 +1,7 @@
 /**
  * 🟡 286. Walls and Gates
  * https://www.lintcode.com/problem/663/
- * Algorithm: DFS
+ * 🎯 DFS
  */
 
 function wallsAndGates(rooms: number[][]): void {

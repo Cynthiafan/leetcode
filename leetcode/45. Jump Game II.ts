@@ -1,7 +1,7 @@
 /**
  * 🟡 45. Jump Game II
  * https://leetcode.com/problems/jump-game-ii/
- * Algorithm: Greedy
+ * 🎯 Greedy
  */
 function jump(nums: number[]): number {
   let jumps = 0;

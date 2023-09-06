@@ -1,7 +1,7 @@
 /**
  * 🟡 763. Partition Labels
  * https://leetcode.com/problems/partition-labels/
- * Algorithm: Greedy
+ * 🎯 Greedy
  */
 
 function partitionLabels(s: string): number[] {

@@ -1,7 +1,7 @@
 /**
  * 🟡 787. Cheapest Flights Within K Stops
  * https://leetcode.com/problems/cheapest-flights-within-k-stops/
- * Algorithm: Dynamic Programming
+ * 🎯 Dynamic Programming
  */
 
 function findCheapestPrice(n: number, flights: number[][], src: number, dst: number, k: number): number {

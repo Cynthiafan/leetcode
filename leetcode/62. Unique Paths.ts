@@ -1,7 +1,7 @@
 /**
  * 🟡 62. Unique Paths
  * https://leetcode.com/problems/unique-paths/
- * Algorithm: 2-D Dynamic Programming
+ * 🎯 2-D Dynamic Programming
  */
 
 function uniquePaths(m: number, n: number): number {

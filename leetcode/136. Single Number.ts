@@ -1,7 +1,7 @@
 /**
  * 🟢 136. Single Number
  * https://leetcode.com/problems/single-number/
- * Algorithm: Bit Manipulation
+ * 🎯 Bit Manipulation
  */
 
 function singleNumber(nums: number[]): number {

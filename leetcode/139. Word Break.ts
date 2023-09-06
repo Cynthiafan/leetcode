@@ -1,7 +1,7 @@
 /**
  * 🟡 139. Word Break
  * https://leetcode.com/problems/word-break/
- * Algorithm: 1-D Dynamic Programming
+ * 🎯 1-D Dynamic Programming
  */
 
 function wordBreak(s: string, wordDict: string[]): boolean {

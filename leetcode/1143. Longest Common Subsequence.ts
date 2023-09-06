@@ -1,7 +1,7 @@
 /**
  * 🟡 1143. Longest Common Subsequence
  * https://leetcode.com/problems/longest-common-subsequence/
- * Algorithm: 2-D Dynamic Programming
+ * 🎯 2-D Dynamic Programming
  */
 
 function longestCommonSubsequence(text1: string, text2: string): number {

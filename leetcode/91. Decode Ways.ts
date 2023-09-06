@@ -1,7 +1,7 @@
 /**
  * 🟡 91. Decode Ways
  * https://leetcode.com/problems/decode-ways/
- * Algorithm: 1-D Dynamic Programming
+ * 🎯 1-D Dynamic Programming
  */
 
 function numDecodings(s: string): number {

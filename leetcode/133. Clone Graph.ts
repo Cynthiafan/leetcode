@@ -1,7 +1,7 @@
 /**
  * 🟡 133. Clone Graph
  * https://leetcode.com/problems/clone-graph/
- * Algorithm: DFS
+ * 🎯 DFS
  */
 
 function cloneGraph(node: GraphNode | null): GraphNode | null {

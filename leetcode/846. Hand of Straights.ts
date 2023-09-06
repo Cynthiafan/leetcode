@@ -1,7 +1,7 @@
 /**
  * 🟡 846. Hand of Straights
  * https://leetcode.com/problems/hand-of-straights/
- * Algorithm: Greedy
+ * 🎯 Greedy
  */
 
 function isNStraightHand(hand: number[], groupSize: number): boolean {

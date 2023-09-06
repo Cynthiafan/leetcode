@@ -1,7 +1,7 @@
 /**
  * 🟡 1584. Min Cost to Connect All Points
  * https://leetcode.com/problems/min-cost-to-connect-all-points/
- * Algorithm: [Kruskal Algorithm](https://zh.wikipedia.org/zh-tw/%E5%85%8B%E9%B2%81%E6%96%AF%E5%85%8B%E5%B0%94%E6%BC%94%E7%AE%97%E6%B3%95)
+ * 🎯 [Kruskal Algorithm](https://zh.wikipedia.org/zh-tw/%E5%85%8B%E9%B2%81%E6%96%AF%E5%85%8B%E5%B0%94%E6%BC%94%E7%AE%97%E6%B3%95)
  */
 
 function minCostConnectPoints(points: number[][]): number {

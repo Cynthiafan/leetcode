@@ -1,7 +1,7 @@
 /**
  * 🟢 338. Counting Bits
  * https://leetcode.com/problems/counting-bits/
- * Algorithm: Bit Manipulation
+ * 🎯 Bit Manipulation
  */
 
 function countBits(n: number): number[] {

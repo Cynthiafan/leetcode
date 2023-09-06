@@ -1,7 +1,7 @@
 /**
  * 🟡 684. Redundant Connection
  * https://leetcode.com/problems/redundant-connection/
- * Algorithm: Union Find
+ * 🎯 Union Find
  */
 
 function findRedundantConnection(edges: number[][]): number[] {

@@ -1,7 +1,7 @@
 /**
  * 🟢 746. Min Cost Climbing Stairs
  * https://leetcode.com/problems/min-cost-climbing-stairs/
- * Algorithm: 1-D Dynamic Programming
+ * 🎯 1-D Dynamic Programming
  */
 
 function minCostClimbingStairs(cost: number[]): number {

@@ -1,7 +1,7 @@
 /**
  * 🟡 53. Maximum Subarray
  * https://leetcode.com/problems/maximum-subarray/
- * Algorithm: Dynamic Programming
+ * 🎯 Dynamic Programming
  */
 
 function maxSubArray(nums: number[]): number {

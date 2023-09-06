@@ -1,7 +1,7 @@
 /**
  * 🟡 518. Coin Change II
  * https://leetcode.com/problems/coin-change-ii/
- * Algorithm: 2-D Dynamic Programming
+ * 🎯 2-D Dynamic Programming
  */
 
 function change(amount: number, coins: number[]): number {

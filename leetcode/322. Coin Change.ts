@@ -1,7 +1,7 @@
 /**
  * 🟡 322. Coin Change
  * https://leetcode.com/problems/coin-change/
- * Algorithm: 1-D Dynamic Programming
+ * 🎯 1-D Dynamic Programming
  */
 
 function coinChange(coins: number[], amount: number): number {

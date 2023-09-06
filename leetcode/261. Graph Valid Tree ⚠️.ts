@@ -1,7 +1,7 @@
 /**
  * 🟡 261. Graph Valid Tree
  * https://www.lintcode.com/problem/178/
- * Algorithm: DFS
+ * 🎯 DFS
  */
 
 function countComponents(n: number, edges: number[][]): number {}

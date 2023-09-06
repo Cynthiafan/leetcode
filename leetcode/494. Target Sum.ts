@@ -1,7 +1,7 @@
 /**
  * 🟡 494. Target Sum
  * https://leetcode.com/problems/target-sum/
- * Algorithm: 2-D Dynamic Programming
+ * 🎯 2-D Dynamic Programming
  */
 
 function findTargetSumWays(nums: number[], target: number): number {

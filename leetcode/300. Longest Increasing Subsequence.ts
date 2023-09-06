@@ -1,7 +1,7 @@
 /**
  * 🟡 300. Longest Increasing Subsequence
  * https://leetcode.com/problems/longest-increasing-subsequence/
- * Algorithm: 1-D Dynamic Programming
+ * 🎯 1-D Dynamic Programming
  */
 
 function lengthOfLIS(nums: number[]): number {
@@ -28,5 +28,5 @@ function lengthOfLIS(nums: number[]): number {
 /**
  * @followup
  * Find the solution which the time complexity is O(n log(n))
- * Algorithm: Patience Sorting (Binary Search + DP)
+ * 🎯 Patience Sorting (Binary Search + DP)
  */

@@ -1,7 +1,7 @@
 /**
  * 🟡 678. Valid Parenthesis String
  * https://leetcode.com/problems/valid-parenthesis-string/
- * Algorithm: Greedy
+ * 🎯 Greedy
  */
 
 function checkValidString(s: string): boolean {

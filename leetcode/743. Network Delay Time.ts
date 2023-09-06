@@ -1,7 +1,7 @@
 /**
  * 🟡 743. Network Delay Time
  * https://leetcode.com/problems/network-delay-time/
- * Algorithm: [Dijkstra Algorithm](https://zh.wikipedia.org/zh-tw/%E6%88%B4%E5%85%8B%E6%96%AF%E7%89%B9%E6%8B%89%E7%AE%97%E6%B3%95)
+ * 🎯 [Dijkstra Algorithm](https://zh.wikipedia.org/zh-tw/%E6%88%B4%E5%85%8B%E6%96%AF%E7%89%B9%E6%8B%89%E7%AE%97%E6%B3%95)
  */
 
 function networkDelayTime(times: number[][], n: number, k: number): number {

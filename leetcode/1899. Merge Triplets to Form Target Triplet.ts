@@ -1,7 +1,7 @@
 /**
  * 🟡 1899. Merge Triplets to Form Target Triplet
  * https://leetcode.com/problems/merge-triplets-to-form-target-triplet/
- * Algorithm: Greedy
+ * 🎯 Greedy
  */
 
 function mergeTriplets(triplets: number[][], target: number[]): boolean {

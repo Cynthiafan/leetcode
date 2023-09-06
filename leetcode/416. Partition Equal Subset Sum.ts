@@ -1,7 +1,7 @@
 /**
  * 🟡 416. Partition Equal Subset Sum
  * https://leetcode.com/problems/partition-equal-subset-sum/
- * Algorithm: 1-D Dynamic Programming
+ * 🎯 1-D Dynamic Programming
  */
 
 function canPartition(nums: number[]): boolean {

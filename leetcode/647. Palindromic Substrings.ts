@@ -1,7 +1,7 @@
 /**
  * 🟡 647. Palindromic Substrings
  * https://leetcode.com/problems/palindromic-substrings/
- * Algorithm: 1-D Dynamic Programming
+ * 🎯 1-D Dynamic Programming
  */
 
 function countSubstrings(s: string): number {

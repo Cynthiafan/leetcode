@@ -1,7 +1,7 @@
 /**
  * 🟡 55. Jump Game
  * https://leetcode.com/problems/jump-game/
- * Algorithm: Greedy
+ * 🎯 Greedy
  */
 
 function canJump(nums: number[]): boolean {

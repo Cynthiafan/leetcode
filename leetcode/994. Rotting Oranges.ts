@@ -1,7 +1,7 @@
 /**
  * 🟡 994. Rotting Oranges
  * https://leetcode.com/problems/rotting-oranges/
- * Algorithm: BFS
+ * 🎯 BFS
  */
 function orangesRotting(grid: number[][]): number {
   if (!grid || !grid.length || !grid[0].length) {

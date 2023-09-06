@@ -1,7 +1,7 @@
 /**
  * 🟡 97. Interleaving String
  * https://leetcode.com/problems/interleaving-string/
- * Algorithm: 2-D Dynamic Programming
+ * 🎯 2-D Dynamic Programming
  */
 
 function isInterleave(s1: string, s2: string, s3: string): boolean {

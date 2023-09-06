@@ -1,7 +1,7 @@
 /**
  * 🟡 213. House Robber II
  * https://leetcode.com/problems/house-robber-ii/
- * Algorithm: 1-D Dynamic Programming
+ * 🎯 1-D Dynamic Programming
  */
 
 function rob(nums: number[]): number {

@@ -1,7 +1,7 @@
 /**
  * 🟡 5. Longest Palindromic Substring
  * https://leetcode.com/problems/longest-palindromic-substring/
- * Algorithm: 1-D Dynamic Programming
+ * 🎯 1-D Dynamic Programming
  */
 
 function longestPalindrome(s: string): string {

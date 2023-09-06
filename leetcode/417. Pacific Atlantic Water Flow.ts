@@ -1,7 +1,7 @@
 /**
  * 🟡 417. Pacific Atlantic Water Flow
  * https://leetcode.com/problems/pacific-atlantic-water-flow/
- * Algorithm: DFS
+ * 🎯 DFS
  */
 
 function pacificAtlantic(heights: number[][]): number[][] {

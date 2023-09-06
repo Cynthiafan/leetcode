@@ -1,7 +1,7 @@
 /**
  * 🟡 72. Edit Distance
  * https://leetcode.com/problems/edit-distance/
- * Algorithm: 2-D Dynamic Programming
+ * 🎯 2-D Dynamic Programming
  */
 
 function minDistance(word1: string, word2: string): number {

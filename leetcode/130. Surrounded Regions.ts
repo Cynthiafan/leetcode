@@ -1,7 +1,7 @@
 /**
  * 🟡 130. Surrounded Regions
  * https://leetcode.com/problems/surrounded-regions/
- * Algorithm: DFS
+ * 🎯 DFS
  */
 
 function solve(board: string[][]): void {

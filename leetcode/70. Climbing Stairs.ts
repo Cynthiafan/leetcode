@@ -1,7 +1,7 @@
 /**
  * 🟢 70. Climbing Stairs
  * https://leetcode.com/problems/climbing-stairs/
- * Algorithm: 1-D Dynamic Programming
+ * 🎯 1-D Dynamic Programming
  */
 
 function climbStairs(n: number): number {
