@@ -1,7 +1,7 @@
 /**
  * 🟡 131. Palindrome Partitioning
  * https://leetcode.com/problems/palindrome-partitioning/
- * Algorithm: Backtracking
+ * 🎯 Backtracking
  */
 
 function partition(s: string): string[][] {
@@ -39,3 +39,9 @@ function partition(s: string): string[][] {
     return true;
   }
 }
+
+/**
+ * @complexity
+ * time: O(2^n + l)
+ * space: O(n)
+ */
