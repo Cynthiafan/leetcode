@@ -1,8 +1,7 @@
 /**
  * 🟡 207. Course Schedule
  * https://leetcode.com/problems/course-schedule/
- * 🎯 DFS
- * Keywords: Topological Sort
+ * 🎯 Graph, DFS
  */
 
 function canFinish(numCourses: number, prerequisites: number[][]): boolean {
@@ -12,26 +11,24 @@ function canFinish(numCourses: number, prerequisites: number[][]): boolean {
     graph[course].push(prerequisite);
   }
 
-  const visited = new Array().fill(false);
-  const onStack = new Array().fill(false);
+  const state = new Array(numCourses).fill(0);
 
   function hasCycle(node: number): boolean {
-    if (visited[node]) return false;
-    visited[node] = true;
-    onStack[node] = true;
+    if (state[node] === 2) return false;
+    state[node] = 1;
 
     for (const next of graph[node]) {
-      if (onStack[next] || hasCycle(next)) {
+      if (state[next] === 1 || hasCycle(next)) {
         return true;
       }
     }
 
-    onStack[node] = false;
+    state[node] = 2;
     return false;
   }
 
   for (let i = 0; i < numCourses; i++) {
-    if (!visited[i] && hasCycle(i)) {
+    if (hasCycle(i)) {
       return false;
     }
   }
@@ -41,8 +38,9 @@ function canFinish(numCourses: number, prerequisites: number[][]): boolean {
 
 /**
  * @description
- * onStack 的用意在，進入遞迴時如果又碰到 onStack[i] 為 true，就代表找到了環
- * 所以在該遞迴跑完後，要將 onStack[node] 改回 false，讓其他遞迴不受影響
+ * state 用來記錄該堂課的狀態，如果是 2 就代表修完了，還沒修完就先改成 1 進行中，接著先把先修的課程都跑一次
+ * 如果有碰到同樣是 1 的就代表出現環了，等於出現 deadlock
+ * 等到先修課程也都沒有環且修完後，在把當前課程改成 2
  */
 
 /**
