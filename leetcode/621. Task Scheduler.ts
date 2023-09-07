@@ -1,15 +1,19 @@
 /**
- * Greedy Algorithm
+ * 🟡 621. Task Scheduler
+ * https://leetcode.com/problems/task-scheduler/
+ * 🎯 Heap/ Priority Queue
  */
+
 function leastInterval(tasks: string[], n: number): number {
   // Step 1: Count the frequency of each task
-  const taskCountMap: { [task: string]: number } = {};
-  for (let task of tasks) {
-    taskCountMap[task] = (taskCountMap[task] || 0) + 1;
+  const taskCountArray = new Array(26).fill(0);
+
+  for (const task of tasks) {
+    taskCountArray[task.charCodeAt(0) - "A".charCodeAt(0)]++;
   }
 
-  // Step 2: Get the frequency array and sort descendingly
-  const taskCountArray = Object.values(taskCountMap).sort((a, b) => b - a);
+  // Step 2: Sort descendingly
+  taskCountArray.sort((a, b) => b - a);
 
   // Step 3: Calculate the idle slots between the maxFrequency
   const maxFrequency = taskCountArray[0];
@@ -25,3 +29,16 @@ function leastInterval(tasks: string[], n: number): number {
 
   return tasks.length + idleSlots;
 }
+
+/**
+ * @description
+ * idleSlots 之所以要在 maxFrequency - 1 跟 taskCountArray[i] 之中取最小
+ * 如果 taskCountArray[i] 跟 taskCountArray[0] 相等
+ * 最多還是只能填入 maxFrequency - 1 個 idle slots，剩下就會放在最後面，但那不是 idle
+ */
+
+/**
+ * @complexity
+ * time: O(n * log(26))
+ * space: O(1)
+ */
