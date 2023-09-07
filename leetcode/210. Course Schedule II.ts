@@ -1,7 +1,7 @@
 /**
  * 🟡 210. Course Schedule II
  * https://leetcode.com/problems/course-schedule-ii/
- * 🎯 BFS
+ * 🎯 Graph, BFS, Topological Ordering
  */
 
 function findOrder(numCourses: number, prerequisites: number[][]): number[] {

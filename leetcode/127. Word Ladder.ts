@@ -1,7 +1,7 @@
 /**
  * 🔴 127. Word Ladder
  * https://leetcode.com/problems/word-ladder/
- * 🎯 BFS
+ * 🎯 Graph, BFS
  */
 
 function ladderLength(beginWord: string, endWord: string, wordList: string[]): number {
