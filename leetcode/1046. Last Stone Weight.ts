@@ -1,7 +1,7 @@
 /**
  * 🟢 1046. Last Stone Weight
  * https://leetcode.com/problems/last-stone-weight/
- * Data Structure: Max Heap
+ * 🎯 Heap/ Priority Queue, Max Heap
  */
 function lastStoneWeight(stones: number[]): number {
   const maxHeap = new MaxHeap();
@@ -50,16 +50,10 @@ class MaxHeap {
       const rightChild = index * 2 + 2;
       let largest = index;
 
-      if (
-        leftChild < this.size &&
-        this.maxHeap[leftChild] > this.maxHeap[largest]
-      ) {
+      if (leftChild < this.size && this.maxHeap[leftChild] > this.maxHeap[largest]) {
         largest = leftChild;
       }
-      if (
-        rightChild < this.size &&
-        this.maxHeap[rightChild] > this.maxHeap[largest]
-      ) {
+      if (rightChild < this.size && this.maxHeap[rightChild] > this.maxHeap[largest]) {
         largest = rightChild;
       }
 
@@ -93,3 +87,9 @@ class MaxHeap {
     [this.maxHeap[i], this.maxHeap[j]] = [this.maxHeap[j], this.maxHeap[i]];
   }
 }
+
+/**
+ * @complexity
+ * time: O(n log n)
+ * space: O(n)
+ */

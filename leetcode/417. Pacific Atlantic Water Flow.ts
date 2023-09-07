@@ -16,15 +16,16 @@ function pacificAtlantic(heights: number[][]): number[][] {
   const atlantic = Array.from({ length: rows }, () => Array(cols).fill(false));
   const result: number[][] = [];
 
+  const directions = [
+    [0, 1],
+    [0, -1],
+    [1, 0],
+    [-1, 0],
+  ];
+
   function dfs(row: number, col: number, visited: boolean[][]): void {
     visited[row][col] = true;
 
-    const directions = [
-      [0, 1],
-      [0, -1],
-      [1, 0],
-      [-1, 0],
-    ];
     for (const [dx, dy] of directions) {
       const newRow = row + dx;
       const newCol = col + dy;

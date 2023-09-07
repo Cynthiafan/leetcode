@@ -1,3 +1,9 @@
+/**
+ * 🟡 355. Design Twitter
+ * https://leetcode.com/problems/design-twitter/
+ * 🎯 Heap/ Priority Queue
+ */
+
 class Twitter {
   private tweets: { userId: number; tweetId: number }[];
   private followers: Map<number, Set<number>>;

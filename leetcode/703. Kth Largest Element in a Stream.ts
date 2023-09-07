@@ -1,3 +1,9 @@
+/**
+ * 🟢 703. Kth Largest Element in a Stream
+ * https://leetcode.com/problems/kth-largest-element-in-a-stream/
+ * 🎯 Heap/ Priority Queue, Min Heap
+ */
+
 class KthLargest {
   private minHeap: number[];
   private k: number;
@@ -40,17 +46,11 @@ class KthLargest {
       const rightChild = index * 2 + 2;
       let smallest = index;
 
-      if (
-        leftChild < this.minHeap.length &&
-        this.minHeap[leftChild] < this.minHeap[smallest]
-      ) {
+      if (leftChild < this.minHeap.length && this.minHeap[leftChild] < this.minHeap[smallest]) {
         smallest = leftChild;
       }
 
-      if (
-        rightChild < this.minHeap.length &&
-        this.minHeap[rightChild] < this.minHeap[smallest]
-      ) {
+      if (rightChild < this.minHeap.length && this.minHeap[rightChild] < this.minHeap[smallest]) {
         smallest = rightChild;
       }
 
@@ -67,3 +67,9 @@ class KthLargest {
     [this.minHeap[i], this.minHeap[j]] = [this.minHeap[j], this.minHeap[i]];
   }
 }
+
+/**
+ * @complexity
+ * time: add O(log k)
+ * space: O(k)
+ */

@@ -1,3 +1,9 @@
+/**
+ * 🟡 973. K Closest Points to Origin
+ * https://leetcode.com/problems/k-closest-points-to-origin/
+ * 🎯 Heap/ Priority Queue, Min Heap
+ */
+
 function kClosest(points: number[][], k: number): number[][] {
   const minHeap = new MinHeap();
 
@@ -40,12 +46,7 @@ class MinHeap {
   private minHeapifyUp(index: number): void {
     while (index > 0) {
       const parentIndex = Math.floor((index - 1) / 2);
-      if (
-        this.isASmallerOrEqualToB(
-          this.minHeap[index],
-          this.minHeap[parentIndex]
-        )
-      ) {
+      if (this.isASmallerOrEqualToB(this.minHeap[index], this.minHeap[parentIndex])) {
         this.swap(index, parentIndex);
         index = parentIndex;
       } else {
@@ -60,22 +61,10 @@ class MinHeap {
       const rightChild = index * 2 + 2;
       let smallest = index;
 
-      if (
-        leftChild < this.size &&
-        this.isASmallerOrEqualToB(
-          this.minHeap[leftChild],
-          this.minHeap[smallest]
-        )
-      ) {
+      if (leftChild < this.size && this.isASmallerOrEqualToB(this.minHeap[leftChild], this.minHeap[smallest])) {
         smallest = leftChild;
       }
-      if (
-        rightChild < this.size &&
-        this.isASmallerOrEqualToB(
-          this.minHeap[rightChild],
-          this.minHeap[smallest]
-        )
-      ) {
+      if (rightChild < this.size && this.isASmallerOrEqualToB(this.minHeap[rightChild], this.minHeap[smallest])) {
         smallest = rightChild;
       }
 
@@ -96,3 +85,9 @@ class MinHeap {
     [this.minHeap[i], this.minHeap[j]] = [this.minHeap[j], this.minHeap[i]];
   }
 }
+
+/**
+ * @complexity
+ * time: O(n log k)
+ * space: O(k)
+ */
