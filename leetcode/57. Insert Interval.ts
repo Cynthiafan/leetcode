@@ -1,6 +1,7 @@
 /**
  * 🟡 57. Insert Interval
  * https://leetcode.com/problems/insert-interval/
+ * 🎯 Intervals
  */
 
 function insert(intervals: number[][], newInterval: number[]): number[][] {
@@ -13,7 +14,7 @@ function insert(intervals: number[][], newInterval: number[]): number[][] {
     i++;
   }
 
-  // 有重疊：開始合併，直到 intervals[i] 的起始值小於等於 newInterval[1]（等於兩者沒有重疊了）
+  // 有重疊：開始合併，直到 intervals[i] 的起始值大於 newInterval[1]（等於兩者沒有重疊了）
   while (i < intervals.length && intervals[i][0] <= newInterval[1]) {
     newInterval[0] = Math.min(intervals[i][0], newInterval[0]);
     newInterval[1] = Math.max(intervals[i][1], newInterval[1]);
